@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function changeColor(color) 
+{
+var panel = document.getElementById('panel')
+document.body.style.backgroundColor = color
+panel.innerHTML = "Background color is set to: " + color.toUpperCase()
+} 
+</script>
+</head>
+<body onload="changeColor('red')">
+<p>Select option to change background color of page</p>
+<form name="Monish">
+<input type="radio" name="color" value="red" onchange="changeColor(this.value)" checked="false">RED<br />
+<input type="radio" name="color" value="green" onchange="changeColor(this.value)">GREEN<br />
+<input type="radio" name="color" value="blue" onchange="changeColor(this.value)">BLUE<br />
+</form>
+<p id="panel"></p>
+</body>
+</html>

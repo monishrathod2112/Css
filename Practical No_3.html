@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical No_3</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var strArray = new Array("Monish", "Ashay", "Gajanan", "Vinit", "Rakesh");
+        var numArray = new Array(10, 15, 22.5, 56, 17, 88);
+
+        document.write("<br> Original String Array elements are: " + strArray); 
+        document.write("<br> Original Numeric Array elements are: " + numArray);
+
+        document.write("<br> Length of String Array elements: " + strArray.length); 
+        document.write("<br> Length of Numeric Array elements: " + numArray.length);
+
+        // Sorting the numeric array without a function will treat them as strings.
+        numArray.sort();
+        strArray.sort();
+        document.write("<br> Sorted Numeric Array elements are: " + numArray); 
+        document.write("<br> Sorted String Array elements are: " + strArray);
+
+        numArray.push(55);
+        document.write("<br> New Numeric Array elements after push(): " + numArray); 
+        strArray.push("Anurag");
+        document.write("<br> New String Array elements after push(): " + strArray);
+
+        numArray.shift();
+        document.write("<br> New Numeric Array elements after shift(): " + numArray); 
+        strArray.shift();
+        document.write("<br> New String Array elements after shift(): " + strArray);
+
+        numArray.unshift(2);
+        document.write("<br> New Numeric Array elements after unshift(): " + numArray); 
+        strArray.unshift("Rahul");
+        document.write("<br> New String Array elements after unshift(): " + strArray);
+
+        numArray.pop();
+        document.write("<br> New Numeric Array elements after pop(): " + numArray); 
+        strArray.pop();
+        document.write("<br> New String Array elements after pop(): " + strArray);
+
+        numArray.splice(2, 0, 55, 87, 33, 58);
+        document.write("<br> New Numeric Array elements after splice(): " + numArray); 
+        strArray.splice(3, 3);
+        document.write("<br> New String Array elements after splice(): " + strArray);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<title> ReadOnly Element </title>
+<script type ="text/javascript">
+function enable()
+{ 
+document.forms.frm1.t1.readOnly=true;
+document.forms.frm1.t2.readOnly=true;
+document.forms.frm1.t3.readOnly=true;
+}
+function disable()
+{ 
+document.forms.frm1.t1.readOnly=false;
+document.forms.frm1.t2.readOnly=false;
+document.forms.frm1.t3.readOnly=false;
+}
+</script>
+</head>
+<body>
+<form name="frm1">
+Username: <input type="text" name="t1" value="">
+<br> <br>
+Email_id: <input type="text" name="t2" value="">
+<br> <br>
+Mobile No: <input type="text" name="t3" value="">
+<br> <br>
+<input type="button" value="Read-only Field" onclick="enable()">
+<input type="button" value="Read-write Field" onclick="disable()">
+</form>
+</body>
+</html>

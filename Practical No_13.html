@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> Practical No_13 </title>
+<script type="text/javascript">
+function displayPage(ch)
+{
+page = ch.options[ch.selectedIndex].value
+if(page != "")
+{
+window.location = page
+}
+}
+</script>
+</head>
+<body>
+<form name='Menus' action="#">
+<b> Select your favourite website: </b>
+<select name="mymenu" onchange="displayPage(this)">
+<option value="https://www.google.com">Google</option>
+<option value="https://www.youtube.com">Youtube</option>
+<option value="https://www.msbte.org.in">MSBTE</option>
+</select>
+</form>
+</body>
+</html>

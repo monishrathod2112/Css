@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> Practical No_14 </title>
+<script type="text/javascript">
+
+img_array = new Array("C:\\Users\\ratho\\Pictures\\Traffic\\01.jpg" , 
+"C:\\Users\\ratho\\Pictures\\Traffic\\02.jpg" , "C:\\Users\\ratho\\Pictures\\Traffic\\03.jpg" , 
+"C:\\Users\\ratho\\Pictures\\Traffic\\04.jpg" , "C:\\Users\\ratho\\Pictures\\Traffic\\05.jpg");
+
+img = 0;
+
+function DisplayImg(num) 
+{
+	img=img+num;
+	
+	if(img>img_array.length-1)
+	{
+		img=0;
+	}
+	
+	if(img<0)
+	{
+		img=img_array.length-1;
+	}
+	
+	document.Slide.src=img_array[img];
+}
+
+</script>
+</head>
+<body>
+<center>
+<img src="C:\Users\ratho\Pictures\Traffic\01.jpg" width="300" height="200" name="Slide"/>  
+<br>
+<br>
+<input type="button" value="< Prev Image" onclick="DisplayImg(-1)"/>
+<input type="button" value="Next Image >" onclick="DisplayImg(1)"/>
+</center>
+</body>
+</html>
